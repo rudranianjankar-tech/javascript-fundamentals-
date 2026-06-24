@@ -11,7 +11,7 @@ let a = 300;
 if (true) {
     let a = 10;
     const b = 20;
-    console.log("INNER",a);
+    //console.log("INNER",a);
 }
 //a = 10 , b= 20 exists only inside the if block
 console.log(a);
@@ -32,6 +32,8 @@ function myFunction() {
 };
 myFunction();
 
+
+//nested scope - function inside function
 function one(){
     const username ="john";
     function two(){
@@ -39,6 +41,32 @@ function one(){
         console.log(username);
         console.log(password);
     }
-    two();
+    //console.log(password);
+     // password is not accessible here, it exists only inside function two
+     //two()
+}
+one()
+
+if(true){
+    const username = "john";
+    if(username === "john"){
+        const password = "123";
+        console.log(username + " " + password);
+}
+//console.log(password); // password is not accessible here, it exists only inside the inner if block
 }
 
+//-------------
+//hoisting 
+
+function addone(num){
+    return num + 1;
+}
+addone(5);
+
+const addTwo = function(num){
+    return num + 2
+}
+addTwo(5);
+
+//closure - function inside function can access outer function variables
