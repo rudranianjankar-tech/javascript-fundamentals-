@@ -1,0 +1,93 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+#height,
+#weight {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#height:focus,
+#weight:focus {
+  border-color: #667eea;
+}
+
+button {
+  width: 200px;
+  height: 45px;
+  margin-top: 25px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5563d6;
+  transform: scale(1.05);
+}
+
+#results {
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+#weight-guide {
+  margin-top: 30px;
+  text-align: left;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#weight-guide h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+#weight-guide p {
+  margin: 10px 0;
+  color: #555;
+}
+
