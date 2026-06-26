@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM learning</title>
+    <style>
+        .black{
+            background-color:black;
+            color:black;
+        }
+    </style>
+</head>
+<body class="black">
+</body>
+    <script>
+        const div= document.createElement('div')
+        console.log(div);
+        div.className= "main"
+        div.id= Math.round(Math.random()*10+1)
+        div.setAttribute("title","good luck")
+        div.style.backgroundColor="pink"
+        div.style.padding="20px"
+const addtext = document.createTextNode("helllooo")                 
+div.appendChild(addtext)
+document.body.appendChild(div)
+    </script>
+    </html>

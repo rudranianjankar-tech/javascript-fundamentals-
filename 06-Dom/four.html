@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM fundamentals</title>
+    <style>
+        .black{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body class="black">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(LangName){
+        const li = document.createElement('li')
+        li.innerHTML = `${LangName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("ruby")
+
+    function addLang(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').
+        appendChild(li)
+    
+    }
+    addLang("java")
+
+    //edit
+  const secondlang = document.querySelector("li:nth-child(2)")
+// secondlang.innerHTML="cpp"
+//secondlang.outerHTML='<li>cpp</li>'
+
+const newli = document.createElement('li')
+newli.textContent="cpp"
+secondlang.replaceWith(newli)
+
+
+//remove
+const last = document.querySelector('li:last-child')
+last.remove()
+</script>
+</html>
