@@ -1,0 +1,32 @@
+body {
+  background-color: #fff7fb;
+  color: #5a4b5c;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#banner {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d67ba8;
+  letter-spacing: 2px;
+}
+
+#clock {
+  background-color: #ffe4ec;
+  color: #7a5c61;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 25px 50px;
+  border-radius: 20px;
+  border: 3px solid #ffc2d1;
+  box-shadow: 0 4px 12px rgba(255, 194, 209, 0.5);
+}
